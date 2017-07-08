@@ -1,17 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+int* BubbleSort(int array[], int size) {
     int itemp;
-    // This varible is the length of an array with ilength members
-    int ilength;
-    cin >> ilength;
     
-    // Since there are ilength members so we declare an array with the highest index "ilength - 1"
-    int ilist[ilength - 1];
-    for (int iindex = 0; iindex < ilength; iindex++){
-        cin >> ilist[iindex];
-    }
+    
     
     // If we want to sort out an array with n (n > 1) members, we need (n - 1) times of sorting.
     
@@ -24,22 +17,20 @@ int main(int argc, const char * argv[]) {
     // ................
     // After executing the outer for loop for the (ilength - 2) time (the second last time), the biggest number in the 3 remaining numbers will be sorted to the third position
     // After executing the outer for loop for the (ilength - 1) time (the last time), the biggest number in the 2 remaining numbers will be sorted to the second position
-    for (int i = 0; i < ilength - 1; i++){
-        for (int j = 0; j < ilength - 1 - i; j++){
-            if (ilist[j] > ilist[j+1]){
+    
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size - 1 - i; j++)
+        {
+            if (array[j] > array[j+1])
+            {
                 // Swap
-                itemp = ilist[j];
-                ilist[j] = ilist[j+1];
-                ilist[j+1] = itemp;
+                itemp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = itemp;
             }
-                
+            
         }
     }
-    
-    for (int i = 0; i < ilength; i++){
-        cout << ilist[i] << endl;
-    }
-    
-    
-    return 0;
+    return array;
 }
