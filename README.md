@@ -9,7 +9,7 @@ Most of the algorithms are written in C++ due to efficiency considerations. It i
 
 
 # Licence
-Copyright© 2017 Haoran Wang
+Copyright© 2017 Haoran Wang. Some rights reserved.
 
 The works in this project are licenced under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) Licence](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US).
 
