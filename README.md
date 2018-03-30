@@ -6,6 +6,8 @@ This repository contains the algorithms I learned.
 Most of the algorithms are written in C++ due to efficiency considerations. It is easy to adapt the codes into other languages like Java, Python, or Pascal. I actually use Java much more than C++ in developing softwares.
 
 
+# IDE
+XCode version 8.2
 
 
 # Licence
