@@ -1,12 +1,13 @@
 #include <iostream>
 #include <cassert>
+
 using namespace std;
 
 // quick_find(num_of_cities) connects cities together pair by pair
 // requires: num_of_cities > 0;
 //           input are valid
 // effects: allocates memory (need to be manually released)
-// time: O(n^2) where n is the size of input
+// time: O(mn) where m is the size of input and n is the num of cities
 int* quick_find(int num_of_cities) {
     assert(num_of_cities > 0);
     cout << "Please enter the number of cities in the question: ";
